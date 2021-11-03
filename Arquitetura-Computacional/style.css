@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+*{
+    background-color: rgb(0, 0, 0);
+    font-family: 'Sanchez';
+}
+
+.header #aba{
+    background-color: #383838;
+}
+
+.header #titulo{
+    color: #FFD234;
+    font-family: 'Sanchez';
+
+}
+
+.header #cont ul{
+    color: white;
+    font-family: 'Sanchez';
+    list-style: none;
+    
+}
+
+.header #botao{
+    color: white;
+    background-color: #921EAF;
+    border-radius: 4px;
+    width: 25vw;
+    height: 25vh;
+}
