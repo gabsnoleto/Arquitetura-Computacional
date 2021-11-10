@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main-style.css">
+    <script type="Text/JavaScript" src="checkinputs.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="page">
+            <h1>Quebra-Cuca</h1>
+            <ul>
+                <li>Matematica</li>
+                <li>Sudoku</li>
+                <li>Cruzadinha</li>
+            </ul>
+            <button class="botao">Meu Perfil</button>
+        </div>
+    </header>
+    <section class="content">
+        <div class="cruzada">
+            <div class="cruzada-content">
+                <div class="progress-bar">
+                    <div class="porcent" id="porcent">Barra de progressão</div>
+                </div>
+                <div class="crosswords">
+                    <label for="z1d" id="label-z1d">8</label><input type="text" id="z1d" maxlength="1" oninput="checkInput(z1d, this.value)">
+                    <label for="z2b" id="label-z2b">12</label><input type="text" id="z2b" maxlength="1" oninput="checkInput(z2b, this.value)">
+                    <input type="text" id="z2d" maxlength="1" oninput="checkInput(z2d, this.value)">
+                    <input type="text" id="z3b" maxlength="1" oninput="checkInput(z3b, this.value)">
+                    <input type="text" id="z3d" maxlength="1" oninput="checkInput(z3d, this.value)">
+                    <input type="text" id="z4b" maxlength="1" oninput="checkInput(z4b, this.value)">
+                    <input type="text" id="z4d" maxlength="1" oninput="checkInput(z4d, this.value)">
+                    <input type="text" id="z4f" maxlength="1" oninput="checkInput(z4f, this.value)">
+                    <label for="z4h" id="label-z4h">16</label><input type="text" id="z4h" maxlength="1" oninput="checkInput(z4h, this.value)">
+                    <input type="text" id="z5b" maxlength="1" oninput="checkInput(z5b, this.value)">
+                    <input type="text" id="z5d" maxlength="1" oninput="checkInput(z5d, this.value)">
+                    <label for="z5f" id="label-z5f-2">10</label><label for="z5f" id="label-z5f">1</label><input type="text" id="z5f" maxlength="1" oninput="checkInput(z5f, this.value)">
+                    <input type="text" id="z5g" maxlength="1" oninput="checkInput(z5g, this.value)">
+                    <input type="text" id="z5h" maxlength="1" oninput="checkInput(z5h, this.value)">
+                    <input type="text" id="z2h" maxlength="1" oninput="checkInput(z2h, this.value)">
+                    <input type="text" id="z6b" maxlength="1" oninput="checkInput(z6b, this.value)">
+                    <label for="z6d" id="label-z6d">13</label><input type="text" id="z6d" maxlength="1" oninput="checkInput(z6d, this.value)">
+                    <input type="text" id="z6e" maxlength="1" oninput="checkInput(z6e, this.value)">
+                    <input type="text" id="z6h" maxlength="1" oninput="checkInput(z6h, this.value)">
+                    <input type="text" id="z2g" maxlength="1" oninput="checkInput(z2g, this.value)">
+                    <label for="z7b" id="label-z7b">2</label><input type="text" id="z7b" maxlength="1" oninput="checkInput(z7b, this.value)">
+                    <input type="text" id="z7c" maxlength="1" oninput="checkInput(z7c, this.value)">
+                    <input type="text" id="z7d" maxlength="1" oninput="checkInput(z7d, this.value)">
+                    <input type="text" id="z7h" maxlength="1" oninput="checkInput(z7h, this.value)">
+                    <label for="z8d" id="label-z8d">15</label><input type="text" id="z8d" maxlength="1" oninput="checkInput(z8d, this.value)">
+                    <input type="text" id="z8e" maxlength="1" oninput="checkInput(z8e, this.value)">
+                    <input type="text" id="z8f" maxlength="1" oninput="checkInput(z8f, this.value)">
+                    <input type="text" id="z8g" maxlength="1" oninput="checkInput(z8g, this.value)">
+                    <input type="text" id="z8h" maxlength="1" oninput="checkInput(z8h, this.value)">
+                    <input type="text" id="z8i" maxlength="1" oninput="checkInput(z8i, this.value)">
+                    <label for="z8j" id="label-z8j">5</label><input type="text" id="z8j" maxlength="1" oninput="checkInput(z8j, this.value)">
+                    <input type="text" id="z8k" maxlength="1" oninput="checkInput(z8k, this.value)">
+                    <input type="text" id="z8b" maxlength="1" oninput="checkInput(z8b, this.value)">
+                    <input type="text" id="z2i" maxlength="1" oninput="checkInput(z2i, this.value)">
+                    <input type="text" id="z2f" maxlength="1" oninput="checkInput(z2f, this.value)">
+                    <input type="text" id="z9d" maxlength="1" oninput="checkInput(z9d, this.value)">
+                    <input type="text" id="z9h" maxlength="1" oninput="checkInput(z9h, this.value)">
+                    <input type="text" id="z9j" maxlength="1" oninput="checkInput(z9j, this.value)">
+                    <label for="za5" id="label-za5">7</label><input type="text" id="za5" maxlength="1" oninput="checkInput(za5, this.value)">
+                    <label for="za9" id="label-za9">6</label><input type="text" id="za9" maxlength="1" oninput="checkInput(za9, this.value)">
+                    <input type="text" id="zaa" maxlength="1" oninput="checkInput(zaa, this.value)">
+                    <input type="text" id="zab" maxlength="1" oninput="checkInput(zab, this.value)">
+                    <input type="text" id="zac" maxlength="1" oninput="checkInput(zac, this.value)">
+                    <input type="text" id="zad" maxlength="1" oninput="checkInput(zad, this.value)">
+                    <label for="zah" id="label-zah">4</label><input type="text" id="zah" maxlength="1" oninput="checkInput(zah, this.value)">
+                    <input type="text" id="zai" maxlength="1" oninput="checkInput(zai, this.value)">
+                    <input type="text" id="zaj" maxlength="1" oninput="checkInput(zaj, this.value)">
+                    <input type="text" id="zb5" maxlength="1" oninput="checkInput(zb5, this.value)">
+                    <label for="zb8" id="label-zb8">9</label><input type="text" id="zb8" maxlength="1" oninput="checkInput(zb8, this.value)">
+                    <input type="text" id="z2e" maxlength="1" oninput="checkInput(z2e, this.value)">
+                    <input type="text" id="zbd" maxlength="1" oninput="checkInput(zbd, this.value)">
+                    <input type="text" id="zbh" maxlength="1" oninput="checkInput(zbh, this.value)">
+                    <input type="text" id="zc5" maxlength="1" oninput="checkInput(zc5, this.value)">
+                    <input type="text" id="zc8" maxlength="1" oninput="checkInput(zc8, this.value)">
+                    <input type="text" id="z2c" maxlength="1" oninput="checkInput(z2c, this.value)">
+                    <input type="text" id="zcd" maxlength="1" oninput="checkInput(zcd, this.value)">
+                    <label for="zd1" id="label-zd1">3</label><input type="text" id="zd1" maxlength="1" oninput="checkInput(zd1, this.value)">
+                    <input type="text" id="zd2" maxlength="1" oninput="checkInput(zd2, this.value)">
+                    <input type="text" id="zd3" maxlength="1" oninput="checkInput(zd3, this.value)">
+                    <label for="zd4" id="label-zd4">14</label><input type="text" id="zd4" maxlength="1" oninput="checkInput(zd4, this.value)">
+                    <input type="text" id="zd5" maxlength="1" oninput="checkInput(zd5, this.value)">
+                    <input type="text" id="zd6" maxlength="1" oninput="checkInput(zd6, this.value)">
+                    <input type="text" id="zd7" maxlength="1" oninput="checkInput(zd7, this.value)">
+                    <input type="text" id="zd8" maxlength="1" oninput="checkInput(zd8, this.value)">
+                    <input type="text" id="zd9" maxlength="1" oninput="checkInput(zd9, this.value)">
+                    <input type="text" id="zda" maxlength="1" oninput="checkInput(zda, this.value)">
+                    <input type="text" id="zdb" maxlength="1" oninput="checkInput(zdb, this.value)">
+                    <input type="text" id="zdc" maxlength="1" oninput="checkInput(zdc, this.value)">
+                    <input type="text" id="zdd" maxlength="1" oninput="checkInput(zdd, this.value)">
+                    <input type="text" id="ze4" maxlength="1" oninput="checkInput(ze4, this.value)">
+                    <input type="text" id="ze5" maxlength="1" oninput="checkInput(ze5, this.value)">
+                    <label for="z2a" id="label-z2a">11</label><input type="text" id="z2a" maxlength="1" oninput="checkInput(z2a, this.value)">
+                    <input type="text" id="zed" maxlength="1" oninput="checkInput(zed, this.value)">
+                
+                </div>
+                <button onclick="clean()">Limpar</button>
+            </div>
+        </div>
+        <div class="dicas">
+            <p id="p-cpu">1. Faz parte do sistema computacional e realiza as instruções de um programa do computador. Responsável por executar comandos de entrada e saída de dados, lógica e aritmética básica.
+            </p>
+            <p id="p-ula">2. Realiza as operações lógicas e a aritméticas de um microprocessador.
+            </p>
+            <p id="p-regis">3. Servem como um tipo de memória local rápida do microprocessador e armazena dados e instruções. 
+            </p>
+            <p id="p-ram">4. Responsável por armazenar de forma temporária os arquivos que estão em aberto ou com informações recentes. Também é conhecida por ser volátil.
+            </p>
+            <p id="p-rom">5. Ela armazena de forma permanente as instruções do seu computador e não é volátil.
+            </p>
+            <p id="p-eprom">6. É somente uma memória de leitura. Tem como característica principal ser facilmente apagada.
+            </p>
+            <p id="p-flash">7. Permite que diversos endereços sejam apagados ou escritos numa só operação.
+            </p>
+            <p id="p-massa">8. Armazena grandes quantidades de informações. Os dados armazenados não são perdidos quando desligamos o equipamento.
+            </p>
+            <p id="p-dma">9. Possibilita que determinados subsistemas de hardware tenham acesso à memória do sistema. Presentes em computadores mais modernos.
+            </p>
+            <p id="p-cs">10. Linha de controle em eletrônica digital usada para selecionar um chip entre vários conectados ao mesmo barramento de computador, geralmente utilizando a lógica de três estados.
+            </p>
+            <p id="p-add">11. Arquitetura usada para transferir dados entre dispositivos que são identificados pelo endereço de hardware da memória física.
+            </p>
+            <p id="p-data">12. Estrutura de software centrada em dados para distribuição e gerenciamento em tempo real e em sistemas distribuídos inteligentes.
+            </p>
+            <p id="p-i5">13. Criado em setembro de 2009 e é fabricado pela Intel. Estão disponíveis no mercado a partir da 5ª geração.
+            </p>
+            <p id="p-i7">14. Modelos mais avançados da linha Intel e foram lançados em meados de novembro de 2008.
+            </p>
+            <p id="p-dual">15. Capaz de lidar com tarefas diferentes para deixar a máquina mais rápida, executada por dois núcleos.
+            </p>
+            <p id="p-quad">16. Tem quatro núcleos, resultando em uma potência maior na execução de tarefas.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="page">
+            <p>Criado por Igor Gomes e Gabriela Noleto </p>
+        </div>
+    </footer>
+</body>
+</html>

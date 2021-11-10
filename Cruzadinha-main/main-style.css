@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+
+body{
+    padding: 0;
+    font-family: 'Sanchez';
+    margin: 0;
+}
+
+.header{
+    margin: 0 0;
+    width: 100%;
+    height: 40px;
+    background-color: #383838;
+}
+
+.page{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page h1{
+    color: #fcb045;
+}
+
+.page ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    color: rgb(173, 91, 180);
+    transition: 0.2s;
+}
+
+.page ul :hover{
+    color: rgb(255, 197, 7);
+
+}
+
+
+button{
+    background-color: rgb(173, 38, 173);
+    font-family: Sanchez;
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+    font-size: 15px;
+    transition: 0.2s
+}
+
+button:hover{
+    background-color: rgb(194, 70, 90);
+    color: rgb(255, 197, 7);
+    border-radius: 5px;
+
+}
+
+
+.progress-bar{
+    width: 500px;
+    height: 30px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.progress-bar .porcent{
+    background: linear-gradient(90deg, #921EAF 0%, #FFD234 100%);
+    width: 0;
+    height: 30px;
+    transition: 0.5s;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+.crosswords {
+    width: 650px;
+    height: 455px;
+    display: grid;
+    grid-template-columns: repeat(20, 32.5px);
+    grid-template-rows: repeat(14, 32.5px);
+    margin-bottom: 15px;
+}
+
+.crosswords input{
+    background-color: #DDDDDD;
+    border-radius: 0;
+    text-align: center;
+    margin: 0.5px 0.5px;
+    border: 3px solid #000;
+    border-radius: 5px;
+    color: #000;
+    font-size: 18PX;
+    font-style: normal;
+    font-weight: 600;
+    color: #000000;
+}
+
+.crosswords label {
+    width: 12px;
+    margin-left: 5px;
+    margin-top: 3px;
+    color: rgb(173, 38, 173);
+    font-size: 8px;
+    font-weight: 600;
+
+    user-select: none;
+    z-index: 1;
+}
+
+
+.crosswords #z1d{
+    grid-area: 1 / 13 / 2 / 14;
+}
+
+.crosswords #label-z1d{
+    grid-area: 1 / 13 / 2 / 14;
+}
+
+.crosswords #z2a{
+    grid-area: 2 / 10 / 3 / 11;
+}
+
+.crosswords #label-z2a{
+    grid-area: 2 / 10 / 3 / 11;
+}
+
+.crosswords #z2d{
+    grid-area: 2 / 13 / 3 / 14;
+}
+
+.crosswords #z2c{
+    grid-area: 2 / 12 / 3 / 13 ;
+}
+
+.crosswords #z2b{
+    grid-area: 2 / 11 / 3 / 12 ;
+}
+
+.crosswords #label-z2b{
+    grid-area: 2 / 11 / 3 / 12 ;
+}
+
+.crosswords #z2e{
+    grid-area: 2 / 14 / 3 / 15;
+}
+
+.crosswords #z2f{
+    grid-area: 2 / 15 / 3 / 16;
+}
+
+.crosswords #z2g{
+    grid-area: 2 / 16 / 3 / 17;
+}
+
+.crosswords #z2h{
+    grid-area: 2 / 17 / 3 / 18;
+}
+
+.crosswords #z2i{
+    grid-area: 2 / 18 / 3 / 19;
+}
+
+.crosswords #z3d{
+    grid-area: 3 / 13 / 4 / 14;
+}
+
+.crosswords #z3b{
+    grid-area: 3 / 11 / 4 / 12;
+}
+
+.crosswords #z4b{
+    grid-area: 4 / 11 / 5 / 12;
+}
+
+.crosswords #z4d{
+    grid-area: 4 / 13 / 5 / 14;
+}
+
+.crosswords #z4f{
+    grid-area: 4 / 15 / 5 / 16;
+}
+
+.crosswords #z4h{
+    grid-area: 4 / 17 / 5 / 18;
+}
+
+.crosswords #label-z4h{
+    grid-area: 4 / 17 / 5 / 18;
+}
+
+.crosswords #z5b{
+    grid-area: 5 / 11 / 6 / 12;
+}
+
+.crosswords #z5d{
+    grid-area: 5 / 13 / 6 / 14;
+}
+
+.crosswords #z5f{
+    grid-area: 5 / 15 / 6 / 16;
+}
+
+.crosswords #label-z5f{
+    grid-area: 5 / 15 / 6 / 16;
+}
+
+.crosswords #label-z5f-2{
+    grid-area: 5 / 15 / 6 / 16;
+    justify-self: flex-end;
+    margin-right: 5px;
+}
+
+.crosswords #z5g{
+    grid-area: 5 / 16 / 6 / 17;
+}
+
+.crosswords #z5h{
+    grid-area: 5 / 17 / 6 / 18;
+}
+
+.crosswords #z6b{
+    grid-area: 6 / 11 / 7 / 12;
+}
+
+.crosswords #z6d{
+    grid-area: 6 / 13 / 7 / 14;
+}
+
+.crosswords #label-z6d{
+    grid-area: 6 / 13 / 7 / 14;
+}
+
+.crosswords #z6e{
+    grid-area: 6 / 14 / 7 / 15;
+}
+
+.crosswords #z6h{
+    grid-area: 6 / 17 / 7 / 18;
+}
+
+.crosswords #z77{
+    grid-area: 7 / 7 / 8 / 8;
+}
+
+.crosswords #label-z77{
+    grid-area: 7 / 7 / 8 / 8;
+}
+
+.crosswords #z78{
+    grid-area: 7 / 8 / 8 / 9;
+}
+
+.crosswords #z7b{
+    grid-area: 7 / 11 / 8 / 12;
+}
+
+.crosswords #label-z7b{
+    grid-area: 7 / 11 / 8 / 12;
+}
+
+.crosswords #z7c{
+    grid-area: 7 / 12 / 8 / 13;
+}
+
+
+.crosswords #z7d{
+    grid-area: 7 / 13 / 8 / 14;
+}
+
+.crosswords #z7h{
+    grid-area: 7 / 17 / 8 / 18;
+}
+
+
+.crosswords #z8b{
+    grid-area: 8 / 11 / 9 / 12;
+}
+
+.crosswords #z8d{
+    grid-area: 8 / 13 / 9 / 14;
+}
+
+.crosswords #label-z8d{
+    grid-area: 8 / 13 / 9 / 14;
+}
+
+.crosswords #z8e{
+    grid-area: 8 / 14 / 9 / 15;
+}
+
+.crosswords #z8f{
+    grid-area: 8 / 15 / 9 / 16;
+}
+
+.crosswords #z8g{
+    grid-area: 8 / 16 / 9 / 17;
+}
+
+.crosswords #z8h{
+    grid-area: 8 / 17 / 9 / 18;
+}
+
+.crosswords #z8i{
+    grid-area: 8 / 18 / 9 / 19;
+}
+
+.crosswords #z8j{
+    grid-area: 8 / 19 / 9 / 20;
+}
+
+.crosswords #label-z8j{
+    grid-area: 8 / 19 / 9 / 20;
+}
+
+.crosswords #z8k{
+    grid-area: 8 / 20 / 9 / 21;
+}
+
+.crosswords #z8b{
+    grid-area: 8 / 11 / 9 / 12;
+}
+
+
+.crosswords #z9d{
+    grid-area: 9 / 13 / 10 / 14;
+}
+
+.crosswords #z9h{
+    grid-area: 9 / 17 / 10 / 18;
+}
+
+.crosswords #z9j{
+    grid-area: 9 / 19 / 10 / 20;
+}
+
+.crosswords #za5{
+    grid-area: 10 / 5 / 11 / 6;
+}
+
+.crosswords #label-za5{
+    grid-area: 10 / 5 / 11 / 6;
+}
+
+.crosswords #za9{
+    grid-area: 10 / 9 / 11 / 10;
+}
+
+.crosswords #label-za9{
+    grid-area: 10 / 9 / 11 / 10;
+}
+
+.crosswords #zaa{
+    grid-area: 10 / 10 / 11 / 11;
+}
+
+.crosswords #zab{
+    grid-area: 10 / 11 / 11 / 12;
+}
+
+.crosswords #zac{
+    grid-area: 10 / 12 / 11 / 13;
+}
+
+.crosswords #zad{
+    grid-area: 10 / 13 / 11 / 14;
+}
+
+.crosswords #zah{
+    grid-area: 10 / 17 / 11 / 18;
+}
+
+.crosswords #label-zah{
+    grid-area: 10 / 17 / 11 / 18;
+}
+
+.crosswords #zai{
+    grid-area: 10 / 18 / 11 / 19;
+}
+
+.crosswords #zaj{
+    grid-area: 10 / 19 / 11 / 20;
+}
+
+.crosswords #zb5{
+    grid-area: 11 / 5 / 12 / 6;
+}
+
+.crosswords #zb8{
+    grid-area: 11 / 8 / 12 / 9;
+}
+
+.crosswords #label-zb8{
+    grid-area: 11 / 8 / 12 / 9;
+}
+
+.crosswords #zbd{
+    grid-area: 11 / 13 / 12 / 14;
+}
+
+.crosswords #zbh{
+    grid-area: 11 / 17 / 12 / 18;
+}
+
+.crosswords #zc5{
+    grid-area: 12 / 5 / 13 / 6;
+}
+
+.crosswords #label-zc5{
+    grid-area: 12 / 5 / 13 / 6; 
+}
+
+.crosswords #zc8{
+    grid-area: 12 / 8 / 13 / 9; 
+}
+
+.crosswords #zcd{
+    grid-area: 12 / 13 / 13 / 14;
+}
+
+.crosswords  #zd1{
+    grid-area: 13/ 1 / 14 / 2;
+}
+
+.crosswords #label-zd1{
+    grid-area: 13/ 1 / 14 / 2;
+}
+
+.crosswords #zd2{
+    grid-area: 13/ 2 / 14 / 3;
+}
+
+.crosswords #zd3{
+    grid-area: 13/ 3 / 14 / 4;
+}
+
+.crosswords #zd4{
+    grid-area: 13/ 4 / 14 / 5;
+}
+
+.crosswords #label-zd4 {
+    grid-area: 13/ 4 / 14 / 5;
+}
+
+.crosswords #zd5{
+    grid-area: 13/ 5 / 14 / 6;
+}
+
+.crosswords #zd6{
+    grid-area: 13/ 6 / 14 / 7;
+}
+
+.crosswords #zd7{
+    grid-area: 13/ 7 / 14 / 8;
+}
+
+.crosswords #zd8{
+    grid-area: 13/ 8 / 14 / 9;
+}
+
+.crosswords #zd9{
+    grid-area: 13/ 9 / 14 / 10;
+}
+
+.crosswords #zda{
+    grid-area: 13/ 10 / 14 / 11;
+}
+
+.crosswords #zdb{
+    grid-area: 13/ 11 / 14 / 12;
+}
+
+.crosswords #zdc{
+    grid-area: 13/ 12 / 14 / 13;
+}
+
+.crosswords #zdd{
+    grid-area: 13/ 13 / 14 / 14;
+}
+
+.crosswords #ze4{
+    grid-area: 14 / 4 / 15 / 5;
+}
+
+.crosswords #ze5{
+    grid-area: 14 / 5 / 15 / 6;
+}
+
+
+
+.crosswords #label-ze9{
+    grid-area: 14 / 9 / 15 / 10;
+}
+
+.crosswords #zed{
+    grid-area: 14 / 13 / 15 / 14;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+}
+
+.cruzada{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cruzada-content {
+    position: -webkit-sticky;
+    position: sticky;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    top: 35px;
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dicas{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(98,9,121,1) 22%, rgba(255,190,0,1) 100%);
+    color: white;
+    font-size: 14px;
+    height: 90%;
+    margin: 0 0 0 auto;
+    
+}
+.dicas p{
+    width: 90%;
+}
+
+.footer{
+    margin: 0 0;
+    width: 100%;
+    height: 50px;
+    background-color: #383838;
+}
+
+.footer .page{
+    justify-content: center;
+    color: white;
+    
+}
